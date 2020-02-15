@@ -25,3 +25,15 @@ Her gezici sırayla tamamlanacaktır, bu da ikinci gezicinin ilk gezici tamamlan
 
 Her gezici için çıktı, nihai koordinatları ve istikameti olmalıdır.
 
+Input and Output
+Test Input: 
+5 5 
+1 2 N 
+LMLMLMLMM 
+3 3 E 
+MMRMMRMRRM
+
+Expected Output: 
+1 3 N 
+5 1 E
+
