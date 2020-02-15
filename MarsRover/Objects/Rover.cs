@@ -117,7 +117,7 @@ namespace MarsRover
 
                 if (this.Coordinate.X < 0 || this.Coordinate.X > Plateau.Coordinate.X || this.Coordinate.Y < 0 || this.Coordinate.Y > Plateau.Coordinate.Y)
                 {
-                    throw new Exception($"Oops! Position can not be beyond bounderies (0 , 0) and ({Plateau.Coordinate.X} , {Plateau.Coordinate.Y})");
+                    throw new Exception($"{Plateau.Coordinate.X} , {Plateau.Coordinate.Y}");
                 }
             }
         }
