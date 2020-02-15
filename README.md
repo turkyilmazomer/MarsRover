@@ -1,9 +1,9 @@
 # MarsRover
-Bir robot rovers takımı NASA tarafından Mars'taki bir platoya inecek.İlginç bir şekilde dikdörtgen olan bu plato, gemideki kameralarının Dünya'ya geri göndermek için çevredeki araziyi tam olarak görebilmeleri için geziciler tarafından yönlendirilecek.
+Bir robot gezgin takımı NASA tarafından Mars'taki bir platoya inecek. İlginç bir şekilde dikdörtgen olan bu plato, gemideki kameralarının Dünya'ya geri göndermek için çevredeki araziyi tam olarak görebilmeleri için geziciler tarafından yönlendirilecek.
 
 Bir gezicinin pozisyionu ve konumu, X ve Y koordinatlarının bir kombinasyonu ve dört kardinal pusula noktasından birini temsil eden bir harfle temsil edilir. Plato, navigasyonu kolaylaştırmak için bir ızgaraya bölünmüştür.
 
-Örnek bir konum 0, 0, N olabilir; bu, gezginin sol alt köşede ve Kuzeye baktığı anlamına gelir.
+Örnek bir konum 0, 0, N olabilir; bu, gezginin sol alt köşede ve kuzeye baktığı anlamına gelir.
 
 Bir gezici kontrol etmek için, NASA harflerin basit bir dize gönderir. Olası harfler 'L', 'R' ve 'M'dir. 
 
@@ -11,7 +11,7 @@ Bir gezici kontrol etmek için, NASA harflerin basit bir dize gönderir. Olası 
 
 'M', bir ızgara noktasını ileriye taşımak ve aynı istikameti korumak anlamına gelir.
 
-(X, y) 'den doğrudan Kuzey karesinin (x, y + 1) olduğunu varsayalım.
+(X, Y) 'den doğrudan Kuzey karesinin (x, y + 1) olduğunu varsayalım.
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
