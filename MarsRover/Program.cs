@@ -11,8 +11,8 @@ namespace MarsRover
 
         static void Main(string[] args)
         {
-            
-            var plateau = Plateau.Create("Mars",new Coordinate(5,5));
+
+            Plateau plateau = new Plateau("Mars",new Coordinate(5,5));
 
             Rover rover1 = new Rover(plateau, new Coordinate(1,2), Direction.N);
             rover1.Start("LMLMLMLMM");

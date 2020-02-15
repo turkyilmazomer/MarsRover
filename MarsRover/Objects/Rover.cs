@@ -17,7 +17,7 @@ namespace MarsRover
     public class Rover
     {
         public Plateau Plateau { get; set; }
-        public Coordinate Coordinate{ get; set; }
+        public Coordinate Coordinate { get; set; }
         public Direction Direction { get; set; }
 
 
@@ -102,16 +102,13 @@ namespace MarsRover
                 switch (letter)
                 {
                     case 'M':
-                        this.Move();
+                        Move();
                         break;
                     case 'L':
-                        this.Rotate("L");
+                        Rotate("L");
                         break;
                     case 'R':
-                        this.Rotate("R");
-                        break;
-                    default:
-                        Console.WriteLine($"Invalid Character {letter}");
+                        Rotate("R");
                         break;
                 }
 
