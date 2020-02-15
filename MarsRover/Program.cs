@@ -14,13 +14,10 @@ namespace MarsRover
             
             var plateau = Plateau.Create("Mars",new Coordinate(5,5));
 
-            
-          
-
             Rover rover1 = new Rover(plateau, new Coordinate(1,2), Direction.N);
-            rover1.StartMoving("LMLMLMLMM");
+            rover1.Start("LMLMLMLMM");
             Rover rover2 = new Rover(plateau, new Coordinate(3, 3), Direction.E);
-            rover2.StartMoving("MMRMMRMRRM");
+            rover2.Start("MMRMMRMRRM");
 
 
             Console.WriteLine("Test Input:\n5 5\n1 2 N\nLMLMLMLMM\n3 3 E\nMMRMMRMRRM\n\nExpected Output :");

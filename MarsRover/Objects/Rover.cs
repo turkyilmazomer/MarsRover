@@ -28,9 +28,9 @@ namespace MarsRover
             this.Plateau = plateau;
         }
 
-        private void Rotate(string rotateType)
+        private void Rotate(string direction)
         {
-            if (rotateType == "L")
+            if (direction == "L")
             {
 
                 switch (this.Direction)
@@ -51,7 +51,7 @@ namespace MarsRover
                         break;
                 }
             }
-            else if (rotateType == "R")
+            else if (direction == "R")
             {
                 switch (this.Direction)
                 {
@@ -95,11 +95,11 @@ namespace MarsRover
             }
         }
 
-        public void StartMoving(string moves)
+        public void Start(string letters)
         {
-            foreach (var move in moves)
+            foreach (var letter in letters)
             {
-                switch (move)
+                switch (letter)
                 {
                     case 'M':
                         this.Move();
@@ -111,7 +111,7 @@ namespace MarsRover
                         this.Rotate("R");
                         break;
                     default:
-                        Console.WriteLine($"Invalid Character {move}");
+                        Console.WriteLine($"Invalid Character {letter}");
                         break;
                 }
 
