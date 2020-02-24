@@ -73,8 +73,14 @@ namespace MarsRover
             }
         }
 
+        private int lastX = 0;
+        private int lastY = 0;
+
         private void Move()
         {
+
+            lastX = this.Coordinate.X;
+            lastY = this.Coordinate.Y;
 
             switch (this.Direction)
             {
@@ -95,8 +101,11 @@ namespace MarsRover
             }
         }
 
+     
+
         public void Start(string letters)
         {
+          
             foreach (var letter in letters)
             {
                 switch (letter)
@@ -114,7 +123,14 @@ namespace MarsRover
 
                 if (this.Coordinate.X < 0 || this.Coordinate.X > Plateau.Coordinate.X || this.Coordinate.Y < 0 || this.Coordinate.Y > Plateau.Coordinate.Y)
                 {
-                    throw new Exception($"{Plateau.Coordinate.X} , {Plateau.Coordinate.Y}");
+
+                    //throw new Exception($"{Plateau.Coordinate.X} , {Plateau.Coordinate.Y}");
+
+                    //If the plateau goes out of its boundaries, return to the previous location.
+                    this.Coordinate.X = lastX;
+                    this.Coordinate.Y = lastY;
+
+                  
                 }
             }
         }
